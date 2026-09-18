@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Library — Browse</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Browse.css">
+</head>
+
+<body>
+  <div class="page">
+
+    <header>
+      <a href="Home.html" class="brand">
+        <svg width="30" height="26" viewBox="0 0 34 28">
+          <circle cx="12" cy="12" r="11" fill="#E85CA6" opacity="0.9" />
+          <circle cx="20" cy="14" r="9" fill="#8B5FBF" opacity="0.85" />
+          <circle cx="24" cy="20" r="5" fill="#7FC3E8" opacity="0.9" />
+        </svg>
+        <span>Library</span>
+      </a>
+      <nav aria-label="Primary">
+        <a href="Home.html">Home</a>
+        <a href="Browse.html" class="active">Browse</a>
+        <a href="Membership.html">Membership</a>
+        <a href="About.html">About</a>
+      </nav>
+      <div class="actions">
+        <a class="btn btn-ghost" href="Login.html">Log in</a>
+        <a class="btn btn-solid" href="Signup.html">Sign up</a>
+      </div>
+    </header>
+
+    <div class="page-head">
+      <p class="eyebrow">— Full catalog</p>
+      <h1>Browse Books</h1>
+      <p>4,531 titles across fiction, reference, and open-source reads. Reserve a physical copy or open a digital one
+        instantly.</p>
+    </div>
+
+    <div class="toolbar">
+      <div class="search-bar">
+        <input type="text" placeholder="Search by title, author, or ISBN...">
+        <button>Search</button>
+      </div>
+      <div class="sort-select">Sort: Most popular ⌄</div>
+    </div>
+
+    <div class="layout">
+
+      <!-- FILTERS -->
+      <aside class="filters">
+        <div class="filter-group">
+          <div class="filter-title">Category</div>
+          <div class="filter-row checked"><span class="filter-row-label"><span class="box"></span>All categories</span>
+          </div>
+          <div class="filter-row"><span class="filter-row-label"><span class="box"></span>Fiction</span><span
+              class="filter-count">612</span></div>
+          <div class="filter-row"><span class="filter-row-label"><span class="box"></span>Sci-Fi</span><span
+              class="filter-count">348</span></div>
+          <div class="filter-row"><span class="filter-row-label"><span class="box"></span>Romance</span><span
+              class="filter-count">401</span></div>
+          <div class="filter-row"><span class="filter-row-label"><span class="box"></span>History</span><span
+              class="filter-count">289</span></div>
+          <div class="filter-row"><span class="filter-row-label"><span class="box"></span>Technology</span><span
+              class="filter-count">176</span></div>
+        </div>
+        <hr class="filter-divider">
+        <div class="filter-group">
+          <div class="filter-title">Availability</div>
+          <div class="filter-row checked"><span class="filter-row-label"><span class="box"></span>Available now</span>
+          </div>
+          <div class="filter-row"><span class="filter-row-label"><span class="box"></span>Reserved</span></div>
+          <div class="filter-row"><span class="filter-row-label"><span class="box"></span>Digital only</span></div>
+        </div>
+        <hr class="filter-divider">
+        <div class="filter-group">
+          <div class="filter-title">Format</div>
+          <div class="filter-row checked"><span class="filter-row-label"><span class="box"></span>Physical copy</span>
+          </div>
+          <div class="filter-row"><span class="filter-row-label"><span class="box"></span>Open-source PDF</span></div>
+        </div>
+        <hr class="filter-divider">
+        <a class="clear-filters" href="Browse.html">Clear all filters</a>
+      </aside>
+
+      <!-- RESULTS -->
+      <div>
+        <div class="grid">
+          <div class="book-card">
+            <div class="book-cover cv1"><span class="call-no">005.1</span><span class="cover-title">Clean Code</span>
+            </div>
+            <div class="book-meta">
+              <div class="top-row">
+                <div><b>Clean Code</b>
+                  <div class="author">Robert Martin</div>
+                </div><span class="badge available">Available</span>
+              </div>
+              <div class="meta-bottom"><span class="rating">★ 4.9</span><span class="shelf-tag">Shelf A-12</span></div>
+            </div>
+          </div>
+          <div class="book-card">
+            <div class="book-cover cv2"><span class="call-no">158.1</span><span class="cover-title">The Alchemist</span>
+            </div>
+            <div class="book-meta">
+              <div class="top-row">
+                <div><b>The Alchemist</b>
+                  <div class="author">Paulo Coelho</div>
+                </div><span class="badge available">Available</span>
+              </div>
+              <div class="meta-bottom"><span class="rating">★ 4.8</span><span class="shelf-tag">Shelf C-02</span></div>
+            </div>
+          </div>
+          <div class="book-card">
+            <div class="book-cover cv3"><span class="call-no">823.9</span><span class="cover-title">Shadow Slave</span>
+            </div>
+            <div class="book-meta">
+              <div class="top-row">
+                <div><b>Shadow Slave</b>
+                  <div class="author">Guiltythree</div>
+                </div><span class="badge reserved">Reserved</span>
+              </div>
+              <div class="meta-bottom"><span class="rating">★ 4.6</span><span class="shelf-tag">Shelf E-09</span></div>
+            </div>
+          </div>
+          <div class="book-card">
+            <div class="book-cover cv4"><span class="call-no">823.5</span><span class="cover-title">Six of Crows</span>
+            </div>
+            <div class="book-meta">
+              <div class="top-row">
+                <div><b>Six of Crows</b>
+                  <div class="author">Leigh Bardugo</div>
+                </div><span class="badge digital">Digital only</span>
+              </div>
+              <div class="meta-bottom"><span class="rating">★ 4.9</span><span class="shelf-tag">Open-source</span></div>
+            </div>
+          </div>
+          <div class="book-card">
+            <div class="book-cover cv5"><span class="call-no">305.4</span><span class="cover-title">Half of a Yellow
+                Sun</span></div>
+            <div class="book-meta">
+              <div class="top-row">
+                <div><b>Half of a Yellow Sun</b>
+                  <div class="author">C. N. Adichie</div>
+                </div><span class="badge available">Available</span>
+              </div>
+              <div class="meta-bottom"><span class="rating">★ 4.7</span><span class="shelf-tag">Shelf D-15</span></div>
+            </div>
+          </div>
+          <div class="book-card">
+            <div class="book-cover cv6"><span class="call-no">641.5</span><span class="cover-title">Salt, Fat,
+                Heat</span></div>
+            <div class="book-meta">
+              <div class="top-row">
+                <div><b>Salt, Fat, Heat</b>
+                  <div class="author">Samin Nosrat</div>
+                </div><span class="badge available">Available</span>
+              </div>
+              <div class="meta-bottom"><span class="rating">★ 4.5</span><span class="shelf-tag">Shelf F-03</span></div>
+            </div>
+          </div>
+          <div class="book-card">
+            <div class="book-cover cv7"><span class="call-no">910.4</span><span class="cover-title">The
+                Wayfinders</span></div>
+            <div class="book-meta">
+              <div class="top-row">
+                <div><b>The Wayfinders</b>
+                  <div class="author">Wade Davis</div>
+                </div><span class="badge digital">Digital only</span>
+              </div>
+              <div class="meta-bottom"><span class="rating">★ 4.4</span><span class="shelf-tag">Open-source</span></div>
+            </div>
+          </div>
+          <div class="book-card">
+            <div class="book-cover cv8"><span class="call-no">153.3</span><span class="cover-title">Thinking, Fast &amp;
+                Slow</span></div>
+            <div class="book-meta">
+              <div class="top-row">
+                <div><b>Thinking, Fast &amp; Slow</b>
+                  <div class="author">Daniel Kahneman</div>
+                </div><span class="badge reserved">Reserved</span>
+              </div>
+              <div class="meta-bottom"><span class="rating">★ 4.8</span><span class="shelf-tag">Shelf G-11</span></div>
+            </div>
+          </div>
+          <div class="book-card">
+            <div class="book-cover cv9"><span class="call-no">515.3</span><span class="cover-title">Fundamental
+                Calculus</span></div>
+            <div class="book-meta">
+              <div class="top-row">
+                <div><b>Fundamental Calculus</b>
+                  <div class="author">Eusa Grant</div>
+                </div><span class="badge available">Available</span>
+              </div>
+              <div class="meta-bottom"><span class="rating">★ 4.3</span><span class="shelf-tag">Shelf C-05</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pagination">
+          <div>‹</div>
+          <div class="active">1</div>
+          <div>2</div>
+          <div>3</div>
+          <div>…</div>
+          <div>48</div>
+          <div>›</div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <span><a href="https://instagram.com/xyzLibray">@xyzLibray</a></span>
+      <span><a href="Home.html">Home</a> · <a href="Browse.html">Browse</a> · <a href="Membership.html">Membership</a> ·
+        <a href="About.html">About</a></span>
+    </footer>
+  </div>
+</body>
+
+</html>

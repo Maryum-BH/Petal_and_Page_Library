@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>Inventory</title>
+    <link rel="stylesheet" href="Inventory.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body class="p-3 m-0 border-0 bd-example dashboard_page">
+    <div class="container">
+        <nav class="navbar my-navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center gap-2" href="Dashboard.html">
+                    <img class="image" src="library_icon_a.png" alt="Library Logo" width="60" height="50">
+                    <p class="Library"><b>Library</b></p>
+                </a>
+                <div class="d-flex align-items-center gap-3">
+                    <!-- MM -->
+                    <div class="dropdown">
+                        <button class="navbar-toggler bt_style" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <b>MM</b>
+                        </button>
+
+                        <ul class="dropdown-menu dropdown-menu-end nav-menu">
+                            <li><a class="dropdown-item" href="Login.html">
+                                <img src="Logout.png" alt="">
+                                Logout</a></li>
+                        </ul>
+                    </div>
+                    <!-- Hamburger -->
+                    <div class="dropdown">
+                        <button class="navbar-toggler bt_style" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <ul class="dropdown-menu dropdown-menu-end nav-menu">
+                            <li><a class="dropdown-item" href="Dashboard.html">
+                                <img src="dashboard-square.png" alt="">
+                                Dashboard</a></li>
+                            <li><a class="dropdown-item" href="Inventory.html">
+                                <img src="Inventory.png" alt="">
+                                Inventory</a></li>
+                            <li><a class="dropdown-item" href="Reservations.html">
+                                <img src="Reservations.png" alt="">
+                                Reservations</a></li>
+                            <li><a class="dropdown-item" href="Checkout.html">
+                                <img src="Checkout.png" alt="">
+                                Checkout</a></li>
+                            <li><a class="dropdown-item" href="Return.html">
+                                <img src="Return.png" alt="">
+                                Returns</a></li>
+                            <li><a class="dropdown-item" href="Fines.html">
+                                <img src="Fines.png" alt="">
+                                Fines</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="separator"></div>
+
+        <div class="inv">
+            <img src="Inventory.png" alt="inv_icon">
+            <p class="a"><b>Inventory</b></p>
+        </div>
+
+        <div class="filter">
+            <input type="text" placeholder="Search Title or ID or Author">
+
+            <div class="dropdown">
+                <button class="filter-btn" type="button" data-bs-toggle="dropdown">
+                    All Categories
+                </button>
+                <ul class="dropdown-menu filter-menu">
+                    <li><a class="dropdown-item" href="#">All Categories</a></li>
+                    <li><a class="dropdown-item" href="#">Programming</a></li>
+                    <li><a class="dropdown-item" href="#">Mathematics</a></li>
+                    <li><a class="dropdown-item" href="#">Science</a></li>
+                    <li><a class="dropdown-item" href="#">Fiction</a></li>
+                </ul>
+            </div>
+
+            <div class="dropdown">
+                <button class="filter-btn" type="button" data-bs-toggle="dropdown">
+                    All Status
+                </button>
+                <ul class="dropdown-menu filter-menu">
+                    <li><a class="dropdown-item" href="#">All Status</a></li>
+                    <li><a class="dropdown-item" href="#">Available</a></li>
+                    <li><a class="dropdown-item" href="#">Low stock</a></li>
+                    <li><a class="dropdown-item" href="#">Out of stock</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="browse_ledger">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col" class="book-id">Book ID</th>
+                    <th scope="col" class="book-name">Book Name</th>
+                    <th scope="col" class="author">Author</th>
+                    <th scope="col" class="copies-col">Copies</th>
+                    <th scope="col" class="shelf-col">Shelf</th>
+                    <th scope="col" class="status-col">Status</th>
+                  </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                  <tr>
+                    <td class="book-id">BK-1042</td>
+                    <td class="book-name">Clean Code</td>
+                    <td class="author">Robert Martin</td>
+                    <td><input type="number" class="qty-input" value="4"></td>
+                    <td><input type="text" class="shelf-input" value="A-12"></td>
+                    <td><span class="status available">Available</span></td>
+                  </tr>
+                  <tr>
+                    <td class="book-id">BK-1043</td>
+                    <td class="book-name">The Alchemist</td>
+                    <td class="author">Paulo Coelho</td>
+                    <td><input type="number" class="qty-input" value="10"></td>
+                    <td><input type="text" class="shelf-input" value="C-02"></td>
+                    <td><span class="status available">Available</span></td>
+                  </tr>
+                  <tr>
+                    <td class="book-id">BK-1044</td>
+                    <td class="book-name">Shadow Slave</td>
+                    <td class="author">Guiltythree</td>
+                    <td><input type="number" class="qty-input" value="2"></td>
+                    <td><input type="text" class="shelf-input" value="E-09"></td>
+                    <td><span class="status low-stock">Low stock</span></td>
+                  </tr>
+                  <tr>
+                    <td class="book-id">BK-0579</td>
+                    <td class="book-name">Six of Crows</td>
+                    <td class="author">Leigh Bardugo</td>
+                    <td><input type="number" class="qty-input zero" value="0"></td>
+                    <td><input type="text" class="shelf-input" value="B-06"></td>
+                    <td><span class="status out-of-stock">Out of stock</span></td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+
+        <p class="inv-note">Changes to copies or shelf save automatically</p>
+
+    </div>
+</body>
+
+</html>

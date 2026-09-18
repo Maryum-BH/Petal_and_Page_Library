@@ -1,0 +1,199 @@
+/* #FFF7FD = background light pink */
+
+.dashboard_page{
+    background-color:#FFF7FD;
+}
+.Library{
+    margin-top: 11px;
+    font-size: 35px;
+}
+.bt_style{
+    background-color: #FFC4EE;
+    height: 50px;
+    width: 80px;
+    border-radius: 20px;
+    border: 1px solid gray;
+}
+.nav-menu {
+    width: 170px;
+    padding: 0;
+    margin-top: 10px !important;
+    background-color: #FFC4EE;
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.nav-menu .dropdown-item {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    font-size: 17px;
+    font-weight: 450;
+    color: #222;
+}
+.nav-menu img{
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+}
+.nav-menu .dropdown-item:hover {
+    background-color: #F5A9DC;
+    color: #222;
+}
+.separator{
+    background-color: black;
+    height: 4px;
+    margin-top: 5px;
+}
+.inv {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.a {
+    margin: 0;
+    font-size: 27px;
+}
+.inv img {
+    width: 32px;
+    height: 32px;
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.filter input {
+    flex: 1;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.filter-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px 18px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: white;
+    cursor: pointer;
+    font-size: 15px;
+    color: #333;
+    min-width: 150px;
+}
+.filter-btn::after{
+    content: "";
+    border: solid #666;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    margin-left: 6px;
+}
+
+.filter-menu {
+    min-width: 150px;
+}
+
+.table{
+    margin-top: 30px;
+    text-align: center;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #d99ac7c1;
+    background-color: white;
+}
+.status {
+    display: inline-block;
+    padding: 7px 18px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.available {
+    background-color: rgba(22, 235, 22, 0.344);
+    color: #17652b;
+}
+
+.low-stock {
+    background-color: #fdda69b3;
+    color: #826814;
+}
+
+.out-of-stock {
+    background-color: rgba(245, 0, 0, 0.185);
+    color: #7a2929;
+}
+
+.qty-input {
+    width: 55px;
+    padding: 6px 8px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+.qty-input.zero {
+    border: 1px solid #f5a6a6;
+}
+.shelf-input {
+    width: 65px;
+    padding: 6px 8px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.table td {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    font-size: 16px;
+}
+.table th {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    font-size: 17px;
+    text-align: left;
+    padding-left: 20px;
+}
+.book-id, .book-name, .author {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.book-id {
+    width: 15%;
+}
+.book-name {
+    width: 25%;
+}
+.author {
+    width: 20%;
+}
+.copies-col {
+    width: 13%;
+}
+.shelf-col {
+    width: 12%;
+}
+.status-col {
+    width: 15%;
+}
+
+.inv-note{
+    font-size: 13px;
+    color: #888;
+    margin-top: 20px;
+}

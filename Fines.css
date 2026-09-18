@@ -1,0 +1,170 @@
+/* #FFF7FD = background light pink */
+
+.dashboard_page{
+    background-color:#FFF7FD;
+}
+.Library{
+    margin-top: 11px;
+    font-size: 35px;
+}
+.bt_style{
+    background-color: #FFC4EE;
+    height: 50px;
+    width: 80px;
+    border-radius: 20px;
+    border: 1px solid gray;
+}
+.nav-menu {
+    width: 170px;
+    padding: 0;
+    margin-top: 10px !important;
+    background-color: #FFC4EE;
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.nav-menu .dropdown-item {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    font-size: 17px;
+    font-weight: 450;
+    color: #222;
+}
+.nav-menu img{
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+}
+.nav-menu .dropdown-item:hover {
+    background-color: #F5A9DC;
+    color: #222;
+}
+.separator{
+    background-color: black;
+    height: 4px;
+    margin-top: 5px;
+}
+.card{
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 15px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+.card-body{
+    justify-content: space-around;
+    margin-top: 5px;
+}
+.Finess {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6px;
+    margin-top: 50px;
+}
+.Fine_ledger {
+    margin: 0;
+    font-size: 30px;
+}
+.Finess img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+.ledger-tools {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.ledger-tools input {
+    width: 300px;
+    padding: 8px 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.ledger-tools button {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+.ledger-tools img{
+    width: 27px;
+    height: 27px;
+}
+.table{
+    margin-top: 30px;
+    text-align: center;
+    border-radius: 15px;
+}
+.status {
+    display: inline-block;
+    padding: 7px 18px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.unpaid {
+    background-color: rgba(245, 0, 0, 0.185);
+    color: #7a2929;
+}
+
+.cleared {
+    background-color: rgba(22, 235, 22, 0.344);
+    color: #17652b;
+}
+
+.clear-btn {
+    background-color: white;
+    border: 1px solid #333;
+    border-radius: 6px;
+    padding: 7px 22px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.clear-btn.disabled {
+    cursor: default;
+}
+.table td {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    font-size: 17px;
+}
+.table th {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    font-size: 18px;
+}
+.borrower {
+    width: 25%;
+}
+
+.book {
+    width: 25%;
+}
+
+.days {
+    width: 10%;
+}
+
+.fine {
+    width: 10%;
+}
+
+.status-column {
+    width: 15%;
+}
+
+.action {
+    width: 15%;
+}

@@ -1,0 +1,172 @@
+/* #FFF7FD = background light pink */
+
+.dashboard_page{
+    background-color:#FFF7FD;
+}
+.Library{
+    margin-top: 11px;
+    font-size: 35px;
+}
+.bt_style{
+    background-color: #FFC4EE;
+    height: 50px;
+    width: 80px;
+    border-radius: 20px;
+    border: 1px solid gray;
+}
+.nav-menu {
+    width: 170px;
+    padding: 0;
+    margin-top: 10px !important;
+    background-color: #FFC4EE;
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.nav-menu .dropdown-item {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    font-size: 17px;
+    font-weight: 450;
+    color: #222;
+}
+.nav-menu img{
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+}
+.nav-menu .dropdown-item:hover {
+    background-color: #F5A9DC;
+    color: #222;
+}
+.separator{
+    background-color: black;
+    height: 4px;
+    margin-top: 5px;
+}
+
+.Return{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 50px;
+}
+.Return img{
+    width: 30px;
+    height: 30px;
+}
+.Return p{
+    margin: 0;
+    font-size: 30px;
+}
+
+.search-row{
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+.search-row input{
+    flex: 1;
+    padding: 12px 18px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 15px;
+}
+.search-row input::placeholder{
+    color: #9a9a9a;
+}
+.find-btn{
+    background-color: white;
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 12px 30px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.return-body{
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
+}
+.return-col{
+    flex: 1;
+}
+.col-label{
+    font-size: 15px;
+    color: #6b6b6b;
+    margin-bottom: 12px;
+}
+
+.loan-card{
+    background-color: white;
+    border: 1px solid #F69FD0;
+    border-radius: 12px;
+    padding: 5px 20px;
+}
+.loan-line{
+    display: flex;
+    padding: 16px 0;
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 16px;
+}
+.loan-line:last-child{
+    border-bottom: none;
+}
+.loan-line .late-fee{
+    color: #d92b2b;
+    font-weight: 500;
+}
+
+.condition-card{
+    background-color: white;
+    border: 1px solid #F69FD0;
+    border-radius: 12px;
+    padding: 10px 25px;
+}
+.condition-option{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 14px 0;
+    font-size: 16px;
+}
+.condition-option input[type="radio"]{
+    width: 18px;
+    height: 18px;
+    margin: 0;
+}
+
+.return-separator{
+    background-color: #ddd;
+    height: 1px;
+    margin-top: 40px;
+}
+
+.action-row{
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+.waive-btn{
+    background-color: white;
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 12px 25px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.confirm-return-btn{
+    background-color: #1a1a1a;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 25px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}

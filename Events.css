@@ -1,0 +1,299 @@
+/* colors used on this page:
+   #FBF0F6 = page background (light pink)
+   #FBF5F9 = page-head / filter row background (very light pink)
+   #C74FAE = main accent (rsvp buttons, active nav underline)
+   #E85CA6 = darker pink accent (header border)
+   #8B5FBF = purple accent (used in header logo only)
+   #7FC3E8 = blue accent (used in header logo only)
+   #6b6270 = muted gray text
+   #EEE2EB = light border color
+   #DFF5E5 / #2F8F5B = green tag background / text (Storytime)
+   #FBF0C8 / #9C7A15 = amber tag background / text (Workshop)
+   #EFE9F8 / #6A5AC4 = purple tag background / text (Book club)
+   #FDEBF0 / #B23E76 = pink tag background / text (Author talk)
+*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #F3ECF1;
+    font-family: -apple-system, 'Segoe UI', sans-serif;
+    color: #17151A;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.page{
+    max-width: 1040px;
+    margin: 0 auto;
+    background-color: #FBF0F6;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 32px;
+    border-bottom: 2px solid #E85CA6;
+    background-color: #FFFFFF;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.brand span{
+    font-weight: 800;
+    font-size: 20px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    font-size: 14px;
+    color: #6b6270;
+}
+
+nav a.active{
+    color: #17151A;
+    font-weight: 700;
+    border-bottom: 2px solid #C74FAE;
+    padding-bottom: 4px;
+}
+
+.actions{
+    display: flex;
+    gap: 8px;
+}
+
+.btn{
+    font-family: inherit;
+    padding: 8px 18px;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-ghost{
+    background-color: transparent;
+    border: 1.5px solid #C74FAE;
+    color: #C74FAE;
+}
+
+.btn-solid{
+    background-color: #C74FAE;
+    color: #fff;
+}
+
+.page-head{
+    padding: 36px 32px 6px;
+    text-align: center;
+    background-color: #FBF5F9;
+}
+
+.eyebrow{
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    color: #C74FAE;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+/* used on the page-head eyebrow so it centers itself
+   instead of sitting left-aligned like a normal eyebrow */
+.eyebrow-center{
+    display: flex;
+    justify-content: center;
+}
+
+.page-head h1{
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+
+.page-head p{
+    font-size: 14px;
+    color: #6b6270;
+    max-width: 460px;
+    margin: 0 auto 26px;
+}
+
+.filter-row{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 32px 30px;
+    background-color: #FBF5F9;
+}
+
+.pill{
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-size: 12.5px;
+    font-weight: 600;
+    background-color: #FFFFFF;
+    border: 1.5px solid #EEE2EB;
+    color: #6b6270;
+    cursor: pointer;
+}
+
+.pill.active{
+    background-color: #17151A;
+    border-color: #17151A;
+    color: #fff;
+}
+
+.events-list{
+    padding: 2.4rem 2.5rem;
+}
+
+.month-heading{
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    color: #6b6270;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 28px 0 12px;
+}
+
+.month-heading:first-child{
+    margin-top: 0;
+}
+
+.event-card{
+    display: flex;
+    background-color: #FFFFFF;
+    border: 1px solid #EEE2EB;
+    border-radius: 14px;
+    overflow: hidden;
+    margin-bottom: 12px;
+}
+
+/* the thin colored strip on the left edge of each event card.
+   each event type gets its own color, matching its tag color */
+.event-bar{
+    width: 6px;
+    flex-shrink: 0;
+}
+
+.bar-bookclub{
+    background-color: #B23E76;
+}
+
+.bar-storytime{
+    background-color: #2F8F5B;
+}
+
+.bar-talk{
+    background-color: #E85CA6;
+}
+
+.bar-workshop{
+    background-color: #9C7A15;
+}
+
+.event-body{
+    flex: 1;
+    padding: 16px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.event-info p{
+    font-weight: 700;
+    font-size: 14.5px;
+    margin-bottom: 4px;
+}
+
+.event-info span{
+    font-size: 12.5px;
+    color: #6b6270;
+}
+
+.event-tag{
+    font-size: 10px;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 999px;
+    margin-left: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+}
+
+.tag-storytime{
+    background-color: #DFF5E5;
+    color: #2F8F5B;
+}
+
+.tag-bookclub{
+    background-color: #EFE9F8;
+    color: #6A5AC4;
+}
+
+.tag-workshop{
+    background-color: #FBF0C8;
+    color: #9C7A15;
+}
+
+.tag-talk{
+    background-color: #FDEBF0;
+    color: #B23E76;
+}
+
+.rsvp{
+    font-family: inherit;
+    padding: 9px 18px;
+    font-size: 12.5px;
+    font-weight: 700;
+    background-color: #C74FAE;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    white-space: nowrap;
+}
+
+footer{
+    background-color: #FBF0F6;
+    padding: 1.2rem 2.5rem;
+    border-top: 1px solid #EEE2EB;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+    font-size: 12px;
+    color: #6b6270;
+}
+
+/* on small screens (phone width), hide the nav links
+   and stack each event card's info above its RSVP button */
+@media (max-width: 700px){
+    nav{
+        display: none;
+    }
+    .event-body{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .rsvp{
+        width: 100%;
+        text-align: center;
+    }
+}

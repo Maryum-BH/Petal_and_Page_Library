@@ -1,0 +1,204 @@
+/* #FFF7FD = background light pink */
+
+.dashboard_page{
+    background-color:#FFF7FD;
+}
+.Library{
+    margin-top: 11px;
+    font-size: 35px;
+}
+.bt_style{
+    background-color: #FFC4EE;
+    height: 50px;
+    width: 80px;
+    border-radius: 20px;
+    border: 1px solid gray;
+}
+.nav-menu {
+    width: 170px;
+    padding: 0;
+    margin-top: 10px !important;
+    background-color: #FFC4EE;
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.nav-menu .dropdown-item {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    font-size: 17px;
+    font-weight: 450;
+    color: #222;
+}
+.nav-menu img{
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+}
+.nav-menu .dropdown-item:hover {
+    background-color: #F5A9DC;
+    color: #222;
+}
+.separator{
+    background-color: black;
+    height: 4px;
+    margin-top: 5px;
+}
+
+.Checkout{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 50px;
+}
+.Checkout img{
+    width: 32px;
+    height: 32px;
+}
+.Checkout p{
+    margin: 0;
+    font-size: 30px;
+}
+
+.checkout-body{
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    margin-top: 40px;
+}
+.checkout-col{
+    flex: 1;
+}
+.step-label{
+    font-size: 14px;
+    color: #6b6b6b;
+    margin-bottom: 8px;
+}
+.field-label{
+    font-size: 15px;
+    color: #222;
+    margin-bottom: 6px;
+    margin-top: 20px;
+}
+.field-label:first-of-type{
+    margin-top: 0;
+}
+.checkout-input{
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 15px;
+}
+.checkout-input::placeholder{
+    color: #9a9a9a;
+}
+.date-input-wrap{
+    position: relative;
+}
+.date-input-wrap img{
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+}
+
+.book-result{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 18px 20px;
+    margin-top: 15px;
+}
+.book-cover{
+    width: 55px;
+    height: 70px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+.book-cover img{
+    width: 28px;
+    height: 28px;
+}
+.book-info h5{
+    margin: 0 0 4px 0;
+    font-size: 19px;
+}
+.book-info p{
+    margin: 0;
+    font-size: 14px;
+    color: #444;
+}
+.book-info .book-meta{
+    margin-top: 6px;
+    color: #666;
+}
+
+.confirm-banner{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #A8F0B0;
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 15px;
+}
+.confirm-banner .check{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #2f9e44;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    flex-shrink: 0;
+}
+
+.loan-separator{
+    background-color: #ddd;
+    height: 1px;
+    margin-top: 45px;
+}
+
+.loan-details{
+    margin-top: 35px;
+}
+.loan-row{
+    display: flex;
+    align-items: flex-end;
+    gap: 40px;
+}
+.loan-field{
+    display: flex;
+    flex-direction: column;
+}
+.confirm-btn{
+    background-color: #1a1a1a;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 30px;
+    font-size: 15px;
+    font-weight: 600;
+    height: fit-content;
+    cursor: pointer;
+}
+.loan-note{
+    font-size: 13px;
+    color: #888;
+    margin-top: 15px;
+}

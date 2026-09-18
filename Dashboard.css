@@ -1,0 +1,119 @@
+/* #FFF7FD = background light pink */
+
+.dashboard_page{
+    background-color:#FFF7FD;
+}
+.Library{
+    margin-top: 11px;
+    font-size: 35px;
+}
+.bt_style{
+    background-color: #FFC4EE;
+    height: 50px;
+    width: 80px;
+    border-radius: 20px;
+    border: 1px solid gray;
+}
+.nav-menu {
+    width: 170px;
+    padding: 0;
+    margin-top: 10px !important;
+    background-color: #FFC4EE;
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.nav-menu .dropdown-item {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    font-size: 17px;
+    font-weight: 450;
+    color: #222;
+}
+.nav-menu img{
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+}
+.nav-menu .dropdown-item:hover {
+    background-color: #F5A9DC;
+    color: #222;
+}
+.separator{
+    background-color: black;
+    height: 4px;
+    margin-top: 5px;
+}
+.Dashboard{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    margin-top: 50px;
+
+}
+.Dash{
+    margin-left: 6px;
+    font-size: 25px;
+}
+.card{
+    border: 1px solid #d99ac7c1;
+    border-radius: 15px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+}
+.card-body{
+    justify-content: space-around;
+    margin-top: 5px;
+}
+.notification_activity{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.notifications {
+    margin-top: 50px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 30px;
+    flex: 1;
+}
+
+.notification-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+    margin: 0;
+    font-size: 32px;
+}
+
+.notification {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    border-radius: 25px;
+}
+
+.notification p {
+    margin: 0;
+    font-size: 17px;
+}
+
+.warning {
+    background-color: #FFDC70;
+}
+
+.info {
+    background-color: #FFEAF9;
+}
+.image{
+    height: 30px;
+    width: 30px;
+    padding: 2px;
+    margin-bottom: 10px;
+}

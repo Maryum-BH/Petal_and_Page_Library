@@ -1,0 +1,497 @@
+/* colors used on this page:
+   #FBF0F6 = page background (light pink)
+   #C74FAE = main accent (buttons, active tab underline, tag pills)
+   #E85CA6 = darker pink accent (header border, cover gradient)
+   #8B5FBF = purple accent (used in header logo only)
+   #7FC3E8 = blue accent (used in header logo only)
+   #F0B429 = gold (star ratings)
+   #6b6270 = muted gray text
+   #EEE2EB = light border color
+   #DFF5E5 / #2F8F5B = green badge background / text (Available)
+   #FBF0C8 / #9C7A15 = amber badge background / text (Reserved)
+   #EFE9F8 / #6A5AC4 = purple badge background / text (Digital only)
+*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #F3ECF1;
+    font-family: -apple-system, 'Segoe UI', sans-serif;
+    color: #17151A;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.page{
+    max-width: 1040px;
+    margin: 0 auto;
+    background-color: #FBF0F6;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 32px;
+    border-bottom: 2px solid #E85CA6;
+    background-color: #FFFFFF;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.brand span{
+    font-weight: 800;
+    font-size: 20px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    font-size: 14px;
+    color: #6b6270;
+}
+
+nav a.active{
+    color: #17151A;
+    font-weight: 700;
+    border-bottom: 2px solid #C74FAE;
+    padding-bottom: 4px;
+}
+
+.actions{
+    display: flex;
+    gap: 8px;
+}
+
+.btn{
+    font-family: inherit;
+    padding: 8px 18px;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-ghost{
+    background-color: transparent;
+    border: 1.5px solid #C74FAE;
+    color: #C74FAE;
+}
+
+.btn-solid{
+    background-color: #C74FAE;
+    color: #fff;
+}
+
+.eyebrow{
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    color: #C74FAE;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+/* ===== BREADCRUMB ===== */
+
+.breadcrumb{
+    padding: 16px 32px 6px;
+    font-size: 12px;
+    color: #6b6270;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.breadcrumb a:hover{
+    color: #C74FAE;
+}
+
+.breadcrumb span{
+    color: #CBBAD2;
+}
+
+.breadcrumb .current{
+    color: #17151A;
+    font-weight: 600;
+}
+
+/* ===== DETAIL =====
+   cover + info sit side by side: a fixed 250px column
+   for the cover, then the rest of the space ("1fr")
+   goes to the title/description/reviews */
+.detail{
+    padding: 18px 32px 40px;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 36px;
+}
+
+.cover-art{
+    width: 100%;
+    /* keeps the cover box at a book-like 3-wide-by-4-tall
+       ratio no matter how wide the column ends up being */
+    aspect-ratio: 3 / 4;
+    border-radius: 18px;
+    background: linear-gradient(155deg, #F5B8D6, #E85CA6);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    box-shadow: 0 18px 32px -18px rgba(23, 21, 26, 0.2);
+    color: #fff;
+}
+
+.cover-art .call-no{
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 11px;
+}
+
+.cover-art .cover-title{
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1.15;
+}
+
+.cover-art .cover-author{
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+.cover-actions{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.cover-actions .btn{
+    width: 100%;
+    padding: 11px;
+    font-size: 12.5px;
+}
+
+.cover-actions .btn-outline{
+    background-color: #FFFFFF;
+    border: 1.5px solid #EEE2EB;
+    color: #17151A;
+}
+
+.info-card{
+    margin-top: 14px;
+    background-color: #FFFFFF;
+    border: 1px solid #EEE2EB;
+    border-radius: 12px;
+    padding: 16px 18px;
+}
+
+.info-row{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12.5px;
+    padding: 8px 0;
+    border-top: 1px solid #EEE2EB;
+}
+
+.info-row:first-child{
+    border-top: none;
+}
+
+.info-row .k{
+    color: #6b6270;
+}
+
+.info-row .v{
+    font-weight: 700;
+}
+
+.title-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.title-row h1{
+    font-size: 26px;
+}
+
+.badge{
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 5px 12px;
+    border-radius: 999px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    white-space: nowrap;
+    margin-top: 4px;
+}
+
+.badge.available{
+    background-color: #DFF5E5;
+    color: #2F8F5B;
+}
+
+.badge.reserved{
+    background-color: #FBF0C8;
+    color: #9C7A15;
+}
+
+.badge.digital{
+    background-color: #EFE9F8;
+    color: #6A5AC4;
+}
+
+.author-line{
+    font-size: 14px;
+    color: #6b6270;
+    margin-top: 8px;
+}
+
+.author-line b{
+    color: #17151A;
+}
+
+.rating-row{
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-top: 14px;
+}
+
+.stars{
+    color: #F0B429;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+}
+
+.rating-num{
+    font-size: 12.5px;
+    color: #6b6270;
+}
+
+.tag-row{
+    display: flex;
+    gap: 8px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+}
+
+.tag{
+    background-color: #FBF0F6;
+    color: #C74FAE;
+    font-size: 11.5px;
+    font-weight: 600;
+    padding: 6px 13px;
+    border-radius: 999px;
+}
+
+.desc{
+    margin-top: 22px;
+    font-size: 13.5px;
+    line-height: 1.7;
+    color: #6b6270;
+    max-width: 600px;
+}
+
+.tabs{
+    display: flex;
+    gap: 26px;
+    margin-top: 30px;
+    border-bottom: 1px solid #EEE2EB;
+}
+
+.tab{
+    font-size: 13px;
+    font-weight: 600;
+    padding-bottom: 12px;
+    color: #6b6270;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab.active{
+    color: #17151A;
+}
+
+/* draws the pink underline below whichever tab is active.
+   ::after adds a small extra element with pure CSS, positioned
+   to sit right under the tab text instead of drawing a real
+   border on the whole .tabs row */
+.tab.active::after{
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #C74FAE;
+}
+
+.review{
+    display: flex;
+    gap: 12px;
+    padding: 18px 0;
+    border-bottom: 1px solid #EEE2EB;
+}
+
+.review:last-child{
+    border-bottom: none;
+}
+
+.avatar{
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: #C74FAE;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: 700;
+    flex: 0 0 34px;
+}
+
+.review-name{
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.review-stars{
+    color: #F0B429;
+    font-size: 10.5px;
+    margin-top: 2px;
+}
+
+.review-text{
+    font-size: 12.5px;
+    color: #6b6270;
+    margin-top: 6px;
+    line-height: 1.6;
+}
+
+/* ===== SIMILAR BOOKS ===== */
+
+.section{
+    padding: 10px 32px 44px;
+}
+
+.section-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 20px;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.section-head h2{
+    font-size: 20px;
+}
+
+.see-all{
+    font-size: 12.5px;
+    font-weight: 700;
+    color: #C74FAE;
+}
+
+/* lets the row of similar books scroll sideways instead of
+   wrapping to a new line, if there isn't room for them all */
+.book-row{
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    padding-bottom: 6px;
+}
+
+.book-card{
+    flex: 0 0 160px;
+    background-color: #FFFFFF;
+    border: 1px solid #EEE2EB;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.book-cover{
+    height: 190px;
+    display: flex;
+    align-items: flex-end;
+    padding: 12px;
+    position: relative;
+}
+
+.book-cover .call-no{
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.book-cover .cover-title2{
+    font-weight: 700;
+    color: #fff;
+    font-size: 13.5px;
+    line-height: 1.2;
+}
+
+.book-meta{
+    padding: 11px 13px 13px;
+}
+
+.book-meta .author{
+    font-size: 11.5px;
+    color: #6b6270;
+    margin-bottom: 8px;
+}
+
+/* same idea as the browse page covers: a diagonal
+   two-color blend instead of one flat color */
+.cv1{ background: linear-gradient(160deg, #E85CA6, #C74FAE); }
+.cv2{ background: linear-gradient(160deg, #8B5FBF, #5C4A8F); }
+.cv3{ background: linear-gradient(160deg, #7FC3E8, #4A93B8); }
+.cv4{ background: linear-gradient(160deg, #E0A94A, #C68A2E); }
+.cv5{ background: linear-gradient(160deg, #4FA57F, #337A5C); }
+
+footer{
+    padding: 1.2rem 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+    font-size: 12px;
+    color: #6b6270;
+    border-top: 1px solid #EEE2EB;
+}
+
+/* on medium screens, hide the nav links, stack the cover
+   above the info instead of side by side, and cap how
+   wide the cover art gets so it doesn't look oversized */
+@media (max-width: 800px){
+    nav{
+        display: none;
+    }
+    .detail{
+        grid-template-columns: 1fr;
+    }
+    .cover-art{
+        max-width: 220px;
+    }
+}
