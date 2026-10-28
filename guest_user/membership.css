@@ -1,0 +1,28 @@
+/* membership.css – styles only used on this page.  */
+.pgrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 24px;
+    align-items: start;
+}
+.pcard:hover{
+    transform: translateY(-4px);
+}
+.pcard.hl{
+    border-color: #e0759f;
+}
+:root[data-t="dark"] .pcard.hl{
+    border: 3px solid #e0759f;
+}
+.ptag{
+    position: absolute;
+    top: -13px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #df759f;
+    color: #fff;
+    font: 600 12px Poppins;
+    padding: 4px 14px;
+    border-radius: 99px;
+    white-space: nowrap;
+}

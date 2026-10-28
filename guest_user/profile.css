@@ -1,0 +1,29 @@
+/* profile.css – styles only used on this page.  */
+.avs{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+.avs div{
+    border-radius: 50%;
+    cursor: pointer;
+    background: var(--pk);
+    padding: 2px;
+    border: 3px solid transparent;
+    transition: 0.2s;
+}
+.avs div:hover{
+    transform: scale(1.1);
+}
+.avs .on{
+    border-color: var(--co);
+}
+.avs{
+    grid-template-columns: repeat(auto-fill, minmax(64px, 1fr));
+}
+.avs div{
+    background: none;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 50%;
+}

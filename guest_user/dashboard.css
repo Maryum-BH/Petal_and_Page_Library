@@ -1,0 +1,57 @@
+/* dashboard.css – styles only used on this page.  */
+.mem{
+    background: linear-gradient(135deg, #ffcfe0, #d6cdfb);
+    border-radius: 22px;
+    padding: 20px;
+    max-width: 400px;
+    position: relative;
+    box-shadow: var(--sh);
+    color: #3f3a7a;
+}
+.mc{
+    background: #fff;
+    border-radius: 22px;
+    padding: 12px;
+    color: #222;
+}
+.mc .in{
+    border: 2.5px dashed #eaa9c8;
+    border-radius: 16px;
+    padding: 16px 22px;
+    position: relative;
+    min-height: 170px;
+}
+.mc .pr{
+    font-size: 12px;
+    letter-spacing: 0.5px;
+}
+.mc h2{
+    font: 500 28px Poppins;
+    margin: 10px 0 8px;
+}
+.mc .id{
+    color: #c071c9;
+}
+.mc .pf{
+    position: absolute;
+    right: 18px;
+    top: 14px;
+    width: 58px;
+    height: 58px;
+}
+.mc .stamp{
+    position: absolute;
+    right: 14px;
+    bottom: 10px;
+    width: 88px;
+    height: 88px;
+    border: 4px solid #eaa9c8;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    transform: rotate(-12deg);
+    color: #eaa9c8;
+    font-weight: 600;
+    font-size: 11px;
+    text-align: center;
+}

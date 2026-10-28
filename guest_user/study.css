@@ -1,0 +1,89 @@
+/* study.css – styles only used on this page.  */
+.room{
+    border-radius: 26px;
+    overflow: hidden;
+    background: linear-gradient(180deg, #ffe3ec, #f1dcff 55%, #ead2b0 55%, #d9b88a);
+    position: relative;
+    padding: 18px 14px 20px;
+    box-shadow: var(--sh);
+}
+:root[data-t="dark"] .room{
+    background: linear-gradient(180deg, #2b2352, #3a2d66 55%, #5b4332 55%, #4a3626);
+}
+.room .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 10px;
+    min-height: 96px;
+}
+.win{
+    width: 110px;
+    height: 84px;
+    border-radius: 50px 50px 8px 8px;
+    background: linear-gradient(#bfe3ff, #fbd5ec);
+    border: 5px solid #fff;
+    display: grid;
+    place-items: center;
+    font-size: 26px;
+}
+:root[data-t="dark"] .win{
+    background: linear-gradient(#1b1f5a, #5a3a7a);
+}
+.shelf{
+    flex: 1;
+    max-width: 420px;
+    border-bottom: 7px solid #c79a6a;
+    display: flex;
+    gap: 4px;
+    align-items: flex-end;
+    padding: 0 8px;
+    height: 70px;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+.shelf span{
+    width: 18px;
+    border-radius: 3px 3px 0 0;
+    display: block;
+}
+.desk{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 14px;
+    margin-top: 14px;
+    align-items: end;
+}
+@media (max-width: 700px) {
+    .desk{
+        grid-template-columns: 1fr;
+    }
+}
+.deco{
+    font-size: 40px;
+    display: flex;
+    gap: 6px;
+    flex-direction: column;
+    align-items: center;
+}
+.deco .lamp{
+    filter: drop-shadow(0 0 14px #ffd36b);
+    animation: fl 5s infinite;
+}
+.tw{
+    animation: tw 2.4s ease-in-out infinite;
+}
+@keyframes tw {
+    50%{
+        opacity: 0.25;
+    }
+}
+.st{
+    animation: st 3s ease-in-out infinite;
+}
+@keyframes st {
+    50%{
+        transform: translateY(-5px);
+        opacity: 0.3;
+    }
+}

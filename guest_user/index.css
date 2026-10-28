@@ -1,0 +1,8 @@
+/* index.css – styles only used on this page.  */
+.hero{
+    text-align: center;
+    padding: 30px 8px;
+}
+.hero .big{
+    font-size: 56px;
+}
